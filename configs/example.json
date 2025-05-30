@@ -1,0 +1,48 @@
+{
+    "KSampler/seed": {
+      "label": "seed",
+      "values": [2025,2026]
+      },
+    "KSampler/cfg": {
+      "label": "cfg",
+      "values": [6, 12]
+    },
+    "Empty Latent Image/resolution": {
+        "label": "res",
+        "values": [
+          { "width": 1024, "height": 1024 },
+          { "width": 1280, "height": 720 }
+        ]
+      },
+      "Power Lora Loader (rgthree)/lora_1/strength": {
+        "label": "gball",
+        "values": ["off",0.5, 1.0, 1.5],
+        "prompt_keyword": [
+          {
+            "prompt_name": "CLIP Text Encode (Prompt)",
+            "prompt_text": "dishclothball"
+          },
+          {
+            "prompt_name": "CLIP Text Encode (Negative Prompt)",
+            "prompt_text": "hands"
+          }
+        ]
+      },      
+      "Power Lora Loader (rgthree)/lora_2/strength": {
+        "label": "dart",
+        "values": ["off",0.5, 1.0, 1.5],
+        "prompt_keyword": [
+          {
+            "prompt_name": "CLIP Text Encode (Prompt)",
+            "prompt_text": "crescent moon dark Dart field from side"
+          },
+          {
+            "prompt_name": "CLIP Text Encode (Negative Prompt)",
+            "prompt_text": "milky way"
+          }
+        ]
+      }
+    }
+
+
+
