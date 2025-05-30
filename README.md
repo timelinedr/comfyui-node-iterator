@@ -3,6 +3,8 @@ ComfyUI script tool to automate iteration on arbitrary nodes
 
 This tool automates batch prompt submission to ComfyUI by modifying any exported workflow using a structured JSON config file.
 
+NOTE: The ability to save the workflow in the resulting image is not supported.  Keep track of your worklows some other way until I can update this.
+
 ## Files in this Repo
 
 - `main.py` — Entry point for generating prompt variants and submitting them to ComfyUI.
@@ -33,9 +35,9 @@ This starts with the workflow you export from ComfyUI as the base, then applies 
 
 Each key maps to a node input using the format:
 
-
 "Node Title/Input Name"
 
+Be sure your config items include the title, not classname.  This is to allow specificity between instances.  ie. 
 
 Each entry must include:
 

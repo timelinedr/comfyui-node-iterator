@@ -16,7 +16,7 @@
       },
       "Power Lora Loader (rgthree)/lora_1/strength": {
         "label": "gball",
-        "values": ["off",0.5, 1.0, 1.5],
+        "values": ["off",0.5, 1.0],
         "prompt_keyword": [
           {
             "prompt_name": "CLIP Text Encode (Prompt)",
