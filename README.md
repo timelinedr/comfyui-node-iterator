@@ -7,8 +7,8 @@ This tool automates batch prompt submission to ComfyUI by modifying any exported
 
 - `main.py` — Entry point for generating prompt variants and submitting them to ComfyUI.
 - `helpers.py` — Utilities for modifying workflows and constructing filenames.
-- `workflows/purple_bottle.json` — Sample ComfyUI workflow file.
-- `configs/example.json` — Sample config demonstrating multi-variable iteration.
+- `workflows/purple_bottle.json` — Sample ComfyUI API workflow file, to use your own export a known working workflow using the "Export (API)" option and save it in in the workflows folder (recommended)
+- `configs/example.json` — Sample config demonstrating multi-variable iteration, you can make your own versions of this
 
 ## What It Does
 
@@ -26,6 +26,7 @@ From the project root, run:
 
 python3 main.py ./workflows/purple_bottle.json ./configs/example.json
 
+This starts with the workflow you export from ComfyUI as the base, then applies the iterations found in the config
 
 
 ## Constructing a Config File
